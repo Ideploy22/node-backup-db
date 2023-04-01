@@ -50,8 +50,8 @@ async function backupAllDatabases() {
     }
 }
 
-///'Tarefa agendada executada às 11:00 e 11:05 da manhã.'
-cron.schedule('0 11,11 * * *', () => {
+///'Tarefa agendada executada às 03:00 da manha  e as 15:00 da tarde .'
+cron.schedule('0 3,15 * * *', () => {
     backupAllDatabases();
 })
 
